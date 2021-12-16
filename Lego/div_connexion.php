@@ -11,7 +11,7 @@
             Mot de passe
             <input type="password" name="mdp" id="" required autocomplete="off">
         </label>
-        <input type="submit" value="Connexion">
+        <input type="submit" value="Connexion" class="bouton">
     </form>
     <!-- Formulaire de création de compte -->
     <form action="actions/ajout_utilisateur.php" method="POST" id="form_creation_compte">
