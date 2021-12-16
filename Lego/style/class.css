@@ -1,0 +1,145 @@
+:root{
+    --height-header:80px;
+    --height-footer:500px;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FED000;
+    position: absolute;
+    width: calc(100% - 16%);
+    height: var(--height-header);
+    top: 0;
+    display: flex;
+    padding: 0 8%;
+    align-items: center;
+}
+
+header img{
+    height: 80%;
+    display: flex;
+    align-self: center;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu_header{
+    font-size: 14pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+
+#menu_header li{
+    margin-right: 50px;
+}
+
+#utilisateur{
+    font-size: 16pt;
+    right: 40px;
+    position: absolute;
+}
+
+#utilisateur li{
+    margin-left: 20px;
+}
+
+#utilisateur li img{
+    clip-path: circle(50% at 50% 50%);
+    width: 5%;
+    height: auto;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+#menu_header li:hover{
+    text-decoration: underline;
+    text-decoration-thickness:3px ;
+}
+
+footer{
+    width: 100%;
+    height: var(--height-footer);
+    background-color: #00037A;
+}
+
+main{
+    margin-top: var(--height-header);
+    width: 84%;
+    padding: 10px 8%;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bouton{
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid orange;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.bouton:hover{
+    background-color: white;
+}
+
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInRight {
+    0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideInRight {
+    0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    } 
