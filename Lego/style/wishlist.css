@@ -1,0 +1,73 @@
+#wishlist{
+    position: absolute;
+    right: 0;
+    top: var(--height-header);
+    max-height: 80%;
+    min-height: 50%;
+    background-color: white;
+    width: 20%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    z-index: 3;
+    display: none;
+    grid-template-rows: 1fr 7fr;
+}
+
+#wishlist section{
+    overflow: auto;
+    scrollbar-width: thin;
+    height: auto;
+}
+
+#wishlist div{
+    display: grid;
+    grid-template:"img nom"
+    "img panier"
+    "img retirer";
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 10% 10% 1fr;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+#wishlist div:not(:last-child){
+    border-bottom: 1px solid gray;
+}
+
+#wishlist div img{
+    grid-area: img;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-self: center;
+}
+
+#nom_wishlist{
+    grid-area: nom;
+}
+
+#texte_nom_wishlist{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#prix_wishlist{
+    grid-area: prix;
+}
+
+#retirer_wishlist{
+    grid-area: retirer;
+    text-align: center;
+    color: black;
+}
+
+#entete_wishlist{
+    font-size: 16pt;
+    text-decoration: underline;
+    background-color: orange;
+    margin:0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+#arriere_plan_div_connexion{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    display: none;
+}
+
+#div_connexion{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: none;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+
+#div_connexion form{
+    padding: 0 20%;
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+#div_connexion form:first-child{
+    border-bottom: 1px solid black;
+}
+
+#div_connexion form label{
+    display: flex;
+    flex-direction: column;
+    font-size: 16pt;
+}
+
+#div_connexion form label input{
+    font-size: 14pt;
+    padding: 5px;
+}
+
+#div_connexion form input[type=submit]{
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div_mdp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 10px;
+}
